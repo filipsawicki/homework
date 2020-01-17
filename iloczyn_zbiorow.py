@@ -21,17 +21,23 @@
 
 
 def find_common_numbers(set1, set2):
-
-    set1 = ([])
-    set2 = ([])
-    set3 = ([])
-    set = ()
-    for i in set1:
-        if i not in set2:
-            return set
-        else:
-            set3.append(i)
-    return set3
+    set3 = set()
+    set4 = set()
+    if len(set2.intersection(set1)) > 0:
+        return set1.intersection(set2)
+    else:
+        return set3
 
 
 
+
+
+
+# set1 = {1, 2, 3, 4}
+# # set2 = {2, 3, 5, 7, 9, 10}
+#
+# set1 = {1, 2, 3, 4}
+# set2 = {5, 6, 7, 8}
+#
+#
+# print(find_common_numbers(set1, set2))
