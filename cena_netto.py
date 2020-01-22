@@ -28,6 +28,3 @@ def calculate_netto_prize(grocery_list):
 
 
 
-grocery_list = {"apples": (12, 10)}
-
-print(calculate_netto_prize(grocery_list))
