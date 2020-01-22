@@ -13,6 +13,14 @@
 
 
 def hide_password(password):
-    """
-    """
-    pass
+    lp = list(password)
+    for i, password in enumerate(password):
+        if i > 1 and (i + 1) % 3 == 0:
+            lp[i] = "*"
+    return "".join(lp)
+
+
+
+# password = "password1234"
+#
+# hide_password(password)
