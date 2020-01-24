@@ -33,4 +33,3 @@ def determine_the_winner(card1, card2):
     return 0
 
 
-print(determine_the_winner("8", "A"))
