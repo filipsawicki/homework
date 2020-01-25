@@ -24,8 +24,12 @@
 """
 
 
+
 def determine_the_winner(card1, card2):
-    cards_dict = {'2': 1, '3': 2, '4': 3, '5': 4, '6': 5, '7': 6, '8': 7, '9': 8, '10': 9,'J': 10, 'D': 11, 'K': 12, 'A': 13}
+    cards_dict = {'2': 1, '3': 2, '4': 3, '5': 4, '6': 5, '7': 6, '8': 7, '9': 8, '10': 9, 'J': 10, 'D': 11, 'K': 12,
+                  'A': 13}
+
+
     if card1 > card2:
         return 1
     elif card2 > card1:
@@ -33,3 +37,5 @@ def determine_the_winner(card1, card2):
     return 0
 
 
+
+#print(determine_the_winner('A', 'D'))
