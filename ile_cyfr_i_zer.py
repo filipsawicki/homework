@@ -16,18 +16,22 @@
     Podpowiedz: a gdyby tak liczbe rzutowac na napis?
 """
 
+number = 1234567891011000
 
 def count_digits(number):
-    """Zlicza ilosc cyfr w liczbie.
-    :param number: pewna liczba calkowita
-    :return: ilosc cyfr w liczbie (int).
-    """
-    pass
+    return len(str(number))
+
 
 
 def count_zeros(number):
-    """Zlicza zera w liczbie number.
-    :param number: pewna liczba calkowita
-    :return:
-    """
-    pass
+    numbers = [int(i) for i in str(number)]
+    num_zeros = 0
+    for i in numbers:
+        if i == 0:
+            num_zeros += 1
+    return num_zeros
+
+
+
+# print(count_digits(number))
+# print(count_zeros(number))

@@ -38,4 +38,4 @@ def determine_the_winner(card1, card2):
 
 
 
-#print(determine_the_winner('A', 'D'))
+
