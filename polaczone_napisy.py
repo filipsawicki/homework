@@ -24,11 +24,11 @@ def merge_strings(string1, string2):
 
     if len(string1) > len(string2):
         n = len(string1) - len(string2)
-        return str("".join([a for b in zip(string1, string2) for a in b]) + string1[-n::])
+        return "".join([a for b in zip(string1, string2) for a in b]) + string1[-n::]
 
     elif len(string2) > len(string1):
         n = len(string2) - len(string1)
-        return str("".join([a for b in zip(string1, string2) for a in b]) + string2[-n::])
+        return "".join([a for b in zip(string1, string2) for a in b]) + string2[-n::]
 
     else:
-        return str("".join([a for b in zip(string1, string2) for a in b]))
+        return "".join([a for b in zip(string1, string2) for a in b])
