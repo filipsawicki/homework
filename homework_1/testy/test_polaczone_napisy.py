@@ -1,5 +1,5 @@
 import unittest
-from polaczone_napisy import merge_strings
+from homework_1.polaczone_napisy import merge_strings
 
 
 class TestMergeStrings(unittest.TestCase):

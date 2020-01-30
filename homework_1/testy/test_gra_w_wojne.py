@@ -1,5 +1,5 @@
 import unittest
-from gra_w_wojne import determine_the_winner
+from homework_1.gra_w_wojne import determine_the_winner
 
 
 class TestWarCardPlay(unittest.TestCase):

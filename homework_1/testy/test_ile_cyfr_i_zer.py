@@ -1,5 +1,5 @@
 import unittest
-from ile_cyfr_i_zer import count_digits, count_zeros
+from homework_1.ile_cyfr_i_zer import count_digits, count_zeros
 
 
 class TestDigits(unittest.TestCase):

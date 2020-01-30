@@ -1,5 +1,5 @@
 import unittest
-from ile_parzystych import count_even_numbers
+from homework_1.ile_parzystych import count_even_numbers
 
 
 class TestEvenNumbers(unittest.TestCase):

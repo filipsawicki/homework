@@ -1,5 +1,5 @@
 import unittest
-from cena_netto import calculate_netto_prize
+from homework_1.cena_netto import calculate_netto_prize
 
 
 class TestNettoPrize(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from iloczyn_zbiorow import find_common_numbers
+from homework_1.iloczyn_zbiorow import find_common_numbers
 
 
 class MyTestCase(unittest.TestCase):

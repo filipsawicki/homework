@@ -1,5 +1,5 @@
 import unittest
-from podwojne_znaki import produce_double_signs
+from homework_1.podwojne_znaki import produce_double_signs
 
 
 class TestDoubleSigns(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from ukrywanie_hasla import hide_password
+from homework_1.ukrywanie_hasla import hide_password
 
 
 class TestHiddenPassword(unittest.TestCase):

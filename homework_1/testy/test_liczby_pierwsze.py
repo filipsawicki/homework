@@ -1,5 +1,5 @@
 import unittest
-from liczby_pierwsze import is_prime_number
+from homework_1.liczby_pierwsze import is_prime_number
 
 
 class TestPrimeNumbers(unittest.TestCase):
