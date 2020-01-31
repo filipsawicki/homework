@@ -19,4 +19,4 @@ def get_alphabet_signs(sings_amount):
     alphabet = [chr(i) for i in range(65, 91)]
     return alphabet[:n]
 
-print(get_alphabet_signs(5))
+
