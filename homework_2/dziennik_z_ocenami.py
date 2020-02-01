@@ -21,3 +21,22 @@ CLASS_REGISTER = {
     "Mikolaj": 4.0,
     "Robert": 3.0
 }
+
+def list_of_all_grades():
+    return list(CLASS_REGISTER.values())
+
+
+def highest_grade_from_list():
+    return max(list(CLASS_REGISTER.values()))
+
+
+def number_of_failed():
+    clas_list = (CLASS_REGISTER.values())
+    ming = min(list(CLASS_REGISTER.values()))
+    num_min = 0
+    for i in clas_list:
+        if i == ming:
+            num_min += 1
+    return num_min
+
+
