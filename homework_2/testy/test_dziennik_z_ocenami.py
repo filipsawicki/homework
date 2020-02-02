@@ -9,6 +9,7 @@ class TestOfAllGrades(unittest.TestCase):
         self.assertEqual(la, ([4.0, 3.5, 4.0, 4.0, 4.5, 2.0, 2.0, 3.0, 5.0, 4.0, 3.0]))
         self.assertIsNot(la, ([4.0, 3.5, 4.0, 4.0, 4.5, 2.0, 2.0, 3.0, 5.0, 4.0]))
 
+
 class TestMaxGrade(unittest.TestCase):
 
     def test_max_grade(self):
