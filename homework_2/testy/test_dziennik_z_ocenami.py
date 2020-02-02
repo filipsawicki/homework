@@ -7,6 +7,7 @@ class TestOfAllGrades(unittest.TestCase):
     def test_of_all_grades(self):
         la = list_of_all_grades()
         self.assertEqual(la, ([4.0, 3.5, 4.0, 4.0, 4.5, 2.0, 2.0, 3.0, 5.0, 4.0, 3.0]))
+        self.assertIsNot(la, ([4.0, 3.5, 4.0, 4.0, 4.5, 2.0, 2.0, 3.0, 5.0, 4.0]))
 
 class TestMaxGrade(unittest.TestCase):
 
@@ -15,7 +16,16 @@ class TestMaxGrade(unittest.TestCase):
         self.assertEqual(mg, 5.0)
 
 
+class TestNumberFail(unittest.TestCase):
 
     def test_of_number_failed(self):
         nf = number_of_failed()
         self.assertEqual(nf, 2)
+
+
+class TestNameHighestGrade(unittest.TestCase):
+
+    def test_of_highest_grade(self):
+        nh = name_of_highest_grade()
+        self.assertIs(nh, "Ula")
+

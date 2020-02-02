@@ -22,15 +22,19 @@ CLASS_REGISTER = {
     "Robert": 3.0
 }
 
+
 def list_of_all_grades():
+
     return list(CLASS_REGISTER.values())
 
 
 def highest_grade_from_list():
+
     return max(list(CLASS_REGISTER.values()))
 
 
 def number_of_failed():
+
     clas_list = (CLASS_REGISTER.values())
     ming = min(list(CLASS_REGISTER.values()))
     num_min = 0
@@ -39,4 +43,10 @@ def number_of_failed():
             num_min += 1
     return num_min
 
+
+def name_of_highest_grade():
+
+    keys = list(CLASS_REGISTER.keys())
+    values = list(CLASS_REGISTER.values())
+    return keys[values.index(max(values))]
 
