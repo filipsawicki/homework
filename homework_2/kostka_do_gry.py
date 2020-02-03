@@ -23,5 +23,3 @@ def get_most_common_number(number_of_throws):
         number_of_throws -= 1
     print(dice_points)
     return mode(dice_points)
-
-print(get_most_common_number(1))
