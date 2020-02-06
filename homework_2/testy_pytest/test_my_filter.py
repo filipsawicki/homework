@@ -1,6 +1,5 @@
 import pytest
-from ..my_filter import my_filter
-
+from ..my_filter import m
 
 def test_01_my_filter():
     print("Test 01")

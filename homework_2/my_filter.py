@@ -23,7 +23,10 @@ from typing import Callable
 def my_filter(func: Callable, my_list: list) -> list:
     temp = []
     for i in my_list:
-        if i > 0:
+        :
             temp.append(i)
     return temp
 
+
+new_list = my_filter(lambda x: x < 0, [-3, -2, -1, 0, 1, 2, 3])
+print(new_list)
