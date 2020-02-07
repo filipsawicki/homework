@@ -22,9 +22,10 @@ from typing import Callable
 
 def my_filter(func: Callable, my_list: list) -> list:
     temp = []
-    for i in my_list:
-        :
-            temp.append(i)
+    for x in my_list:
+        if func > 0:
+            temp.append(func(x))
+
     return temp
 
 
