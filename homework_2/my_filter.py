@@ -25,7 +25,6 @@ def my_filter(func: Callable, my_list: list) -> list:
     for x in my_list:
         if func(x):
             temp.append(x)
-
     return temp
 
 
