@@ -28,3 +28,5 @@ def my_filter(func: Callable, my_list: list) -> list:
     return temp
 
 
+new_list = my_filter(lambda x: x > 1, [1, 2, 3, 4])
+print(new_list)

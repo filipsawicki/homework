@@ -20,6 +20,7 @@ def test_03_my_filter():
 
 
 def test_04_my_filter():
-    print("Test 04")
+    print("Test 04")new_list = my_map(lambda x: x - 1, [1, 2, 3, 4])
+print(new_list)
     ltest = [-3, -2, -1, 0, 1, 2, 3, 4, 5]
     assert my_filter(lambda x: x > 0, ltest) == [1, 2, 3, 4, 5]

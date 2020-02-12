@@ -19,9 +19,11 @@ from typing import Callable
 
 
 def my_map(func: Callable, my_list: list) -> list:
-    """wlasna definicja funkcji map.
-    :param func: funkcja jednoargumentowa wykonujaca akcje na kazdym elemencie listy my_list.
-    :param my_list: lista ktorej kazdy element zostanie argumentem funkcji func.
-    :return: lista ze zmienionymi elementami
-    """
-    pass
+    temp = []
+    for i in my_list:
+        if func(i):
+            temp.append(func(i))
+    return temp
+
+
+
