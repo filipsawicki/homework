@@ -44,16 +44,12 @@ class Ulamek:
         return Ulamek(total_licznik, total_mianownik)
 
     def __mul__(self, other):
-        total_licznik = (self.licznik * other.mianownik) * (other.licznik * self.mianownik)
+        total_licznik = (self.licznik * other.licznik)
         total_mianownik = self.mianownik * other.mianownik
         return Ulamek(total_licznik, total_mianownik)
 
     def __truediv__(self, other):
-        total_licznik = (self.licznik * other.mianownik) // (other.licznik * self.mianownik)
-        total_mianownik = self.mianownik * other.mianownik
+        total_licznik = (self.licznik * other.mianownik)
+        total_mianownik = self.mianownik * other.licznik
         return Ulamek(total_licznik, total_mianownik)
-
-
-
-
 
