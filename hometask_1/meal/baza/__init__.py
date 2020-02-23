@@ -1,0 +1,1 @@
+from hometask_1.meal.baza.meal import Meal, get_sum_calories

@@ -32,6 +32,3 @@ def count_zeros(number):
     return num_zeros
 
 
-
-# print(count_digits(number))
-# print(count_zeros(number))

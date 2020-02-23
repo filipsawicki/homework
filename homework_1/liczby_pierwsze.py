@@ -18,11 +18,3 @@ def is_prime_number(number):
         return False
 
 
- # if number in (0, 1):
- #        return False
- #
- #    for i in range(2, number-1):
- #        if number % i == 0:
- #            return False
- #
- #    return True

@@ -12,11 +12,9 @@ class Meal:
         self.posilek = posilek
         self.kalorie = kalorie
 
-    def __setitem__(self, key, value):
-        self.__dict__[key] = value
-
-    def __delete__(self, instance):
-        # print(f"Pozycja {self.posilek} {self.kalorie} zostala usunieta")
+    # metoda usuwa posilek zmniejszajac liczbe wszystkich kalorii
+    def delete_meal(self):
+        print(f"Posiłek : {self.posilek} - {self.kalorie} kalorii -- zostal usuniety!")
         Meal.sum_cal -= self.kalorie
         del (self.posilek, self.kalorie)
 
@@ -25,13 +23,17 @@ class Meal:
         self.posilek = posilek
         self.kalorie = kalorie
         Meal.sum_cal += kalorie
+        Meal.meal_dict.update({self.posilek: self.kalorie})
 
     def get_posilek(self):
         return print(f" Posilek:  {self.posilek} - Kalorie: {self.kalorie}")
 
 
+
+
 def get_sum_calories():
     return print(f'Suma kalorii wszystkich posilkow {Meal.sum_cal}')
 
-# def get_print_list():
-#     return print(i for i in Meal.meal_list)
+
+def get_dict():
+    return print(f'Słownik wszystkich posilkow {Meal.meal_dict}')
