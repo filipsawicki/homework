@@ -17,29 +17,23 @@ def increment_string(data) -> str:
     temp_str = ""
     temp_int = []
 
-
     for i in range(len(data)):
         char = data[i]
         if char.isalpha():
             temp_str += "" + char
 
-        else:
-            char.isdigit()
+        elif char.isdigit():
             temp_int.append(int(char))
 
-    temp_int[-1] += 1
-
-    result = temp_str + "".join([str(i) for i in temp_int])
-    return result
-
-
-
-
-
+    if len(temp_int) > 0:
+        number_in_list = ["".join([str(i) for i in temp_int])]
+        number_list = [int(i) for i in number_in_list]
+        number_list[0] += 1
+        return temp_str + "".join(str(i) for i in number_list)
+    else:
+        return temp_str + str(1)
 
 
 print(increment_string("foobar1"))
 
-print(increment_string("foobar23"))
-
-
+print(increment_string("foobar99"))
